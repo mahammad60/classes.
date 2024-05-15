@@ -1,0 +1,69 @@
+class Game:
+    def __init__(self, player, health, magic, lives, alive, name, type, strength, day_night):
+        self.player = player
+        self.health = health
+        self.magic = magic
+        self.lives = lives
+        self.alive = alive
+        self.name = name
+        self.type = type
+        self.strength = strength
+        self.day_night = day_night
+
+class armadyl(Game):
+    def __init__(self):
+        super().__init__("Player", "80", "90", "1", "Yes", "armadyl", "range boss", "30", "day")
+
+class rsplayer(Game):
+    def __init__(self):
+        super().__init__("player", "99", "99", "1", "Yes", "mahammad60", "89", "night", "human")
+
+class demon(Game):
+    def __init__(self):
+        super().__init__("player", "99", "98", "1", "Yes", "tormented demon", "demon", "70", "night")
+
+arma = armadyl()
+rsps = rsplayer()
+devil = demon()
+
+print("Armadyl:")
+print("Name:", arma.name)
+print("Type:", arma.type)
+print("Lives:", arma.lives)
+print("Alive:", arma.alive)
+print("Strength:", arma.strength)
+print("Day/Night:", arma.day_night)
+print("Health:", arma.health)
+print("Magic:", arma.magic)
+print()
+
+print("RsPlayer:")
+print("Name:", rsps.name)
+print("Type:", rsps.type)
+print("Lives:", rsps.lives)
+print("Alive:", rsps.alive)
+print("Strength:", rsps.strength)
+print("Day/Night:", rsps.day_night)
+print("Health:", rsps.health)
+print("Magic:", rsps.magic)
+print()
+
+print("Demon:")
+print("Name:", devil.name)
+print("Type:", devil.type)
+print("Lives:", devil.lives)
+print("Alive:", devil.alive)
+print("Strength:", devil.strength)
+print("Day/Night:", devil.day_night)
+print("Health:", devil.health)
+print("Magic:", devil.magic)
+
+
+
+
+
+
+
+
+
+
